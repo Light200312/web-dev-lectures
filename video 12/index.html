@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mp4 Preview - For audios</title>
+</head>
+<body>
+    <header>
+        <p > <b style="font-size: 24px; "> <em>Previewing the mp4 files</em></b></p>
+    </header>
+    <main> 
+       
+            <button onclick="playaudio('audio1')" title="Playing the song on click">Jadugar</button>
+           <p> <audio id="audio1" src="audio1.mp3" >Jadugar</audio></p>
+           <button onclick="playaudio('audio2')">New hit</button>
+
+           <p> <audio id="audio2" src="audio2.mp3" >New hit</audio></p>
+           <button onclick="playaudio('audio3')">Faraar</button>
+
+           <p> <audio id="audio3" src="audio3.mp3" >Faraar</audio></p>
+           <button onclick="playaudio('audio4')">Diwane</button>
+
+           <p> <audio id="audio4" src="audio4.mp3" >Diwane</audio></p>
+           <!-- <div> <label for="1">Jadugar by Paradox</label></div> -->
+            
+    </main>
+    <script>
+        function playaudio(audioId) 
+        {
+            var audio = document.getElementById(audioId);
+            audio.play();
+            
+            setTimeout(function() {
+                audio.pause();
+                audio.currentTime= 0;
+            },60000
+        );
+        }
+    </script>
+    <footer>
+        <p>Copyright 2024 &copy - www.google.com</p>
+    </footer>
+    
+</body>
+</html>
