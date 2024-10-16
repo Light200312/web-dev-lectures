@@ -16,7 +16,7 @@
            <button onclick="playaudio('audio2')">New hit</button>
 
            <p> <audio id="audio2" src="audio2.mp3" >New hit</audio></p>
-           <button onclick="playaudio('audio3')">Faraar</button>
+           <button onclick="playaudio('audio3')">Faraar</button> 
 
            <p> <audio id="audio3" src="audio3.mp3" >Faraar</audio></p>
            <button onclick="playaudio('audio4')">Diwane</button>
@@ -30,7 +30,7 @@
         {
             var audio = document.getElementById(audioId);
             audio.play();
-            
+
             setTimeout(function() {
                 audio.pause();
                 audio.currentTime= 0;
