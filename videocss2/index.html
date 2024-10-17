@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of selectors in style</title>
+    <style>
+        /* element selector */
+        div {
+            background-color: aqua;
+            color: black;
+        }
+        /* class selector */
+        .red{
+               background-color: red;
+               color: white;
+        }
+        /* ID selector */
+        #red
+        {
+            background-color: rgb(246, 152, 228);
+            color: blue;
+        }
+        /* child selector */
+        div > p{
+           background-color: red;
+           color: black;
+        }
+        /* Descended selector */
+        span p
+        {
+            background-color: yellow;
+            color: red;
+
+        }
+        /* Universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a:link{
+            background-color: rgb(130, 164, 238);
+        }
+        a:active{
+            background-color: teal;
+        }
+        a:hover
+        {
+           color: white;
+        }
+        a:visited{ 
+            background-color: white;
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="red">This is done by selector of class</h1>
+    <div>this done element selecor </div>
+    <p id="red">this is  done by id selector</p>
+    <div><p>this p is direct child of div </p></div>
+    <span><main><p>This is decended child of div with main in midle</p></main></span>
+
+    <a href="https://www.google.com">Google </a>
+    
+</body>
+</html>
