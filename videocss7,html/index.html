@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html{
+        font-size: 20px;
+      }
+
+      .red {
+        box-sizing: border-box;
+        border: solid blue;
+        background-color: rgb(244, 79, 38);
+        font-family: "Lucida Sans";
+        width: 80vw;
+        margin: auto;
+      }
+      .contain {
+            font-size: 18px;
+        
+
+        box-sizing: border-box;
+        /* border: solid blue; */
+        background-color: rgb(244, 79, 38);
+        font-family: "Lucida Sans";
+        /* width: 1531 px , exact size if my display  */
+        width: 80vh;  
+        /*vw-view width , 80 means it has taken 80 % of visible width of screen */
+        /* height: 80vw;  means 80% of widht/horizontal  is now   height*/
+        margin: 5px auto;
+        font-size: 18px ;
+      }
+      .contain p
+      {
+         background-color: aqua;
+         font-size: 2em; /* 2x of inherited size fron contain; */
+         font-size: 2rem;/*2x of root which is html*/
+        
+       
+      } 
+      p{
+         background-color: yellow;
+         /* vmin --- in laptops/pc it is heght---vh ,vmax-->vw */
+         width: 80vmin; 
+         margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="big">THis is test text</div>
+    <h1 class="red">HELLO! my friend</h1>
+    <h2 class="contain">
+      
+      <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+      suscipit perspiciatis?</div>
+      <p>this is an example</p>
+
+
+    </h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, eius.</p>
+  </body>
+</html>

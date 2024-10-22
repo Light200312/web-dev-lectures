@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Css specificity and Cascade</title>
 
-<!-- inline 1000 >id 100 >class or atribute 10 > element 1 > iniversal 0 -->
-</head>
-<style>
-   
-    #blue
-    {
-        color:blue;
+    <!-- inline 1000 >id 100 >class or atribute 10 > element 1 > iniversal 0 -->
+  </head>
+  <style>
+    #blue {
+      color: blue;
     }
 
-    .red{
-        color: rgb(235, 159, 159);
+    .red {
+      color: rgb(235, 159, 159);
     }
 
-     .aqua
-    {
-        color: aqua important;
+    .aqua {
+      color: aqua important;
     }
     /* atribute selector */
-    [data-x=a]
-    {
-        background-color: yellow;
+    [data-x="a"] {
+      background-color: rgb(239, 239, 95);
     }
-</style>
-<body>
+    /* important has most specifity */
+    .nenoimp {
+      background-color: rgb(192, 165, 216);
+    }
+  </style>
+  <body>
     <!-- INline style has 1000 specifity -->
-    <h1 style="color: red;">This is test text for cascading </h1>
+    <h1 style="color: red">This is test text for cascading</h1>
     <!-- id 1000> class 100 -->
     <h2 id="blue" class="aqua">This is second text</h2>
     <!-- This h2 is order/appearence specific -->
-    <h2 class="aqua red gray">This is third text </h2>
+    <h2 class="aqua red gray">This is third text</h2>
 
-    <h2 class="red" data-x="a" >This another one text</h2>
-    <h2 id="blue" class="aqua">This is second text</h2>
-    
-</body>
+    <h2 class="red" data-x="a">This another one text</h2>
+    <h2 id="blue" class="nenoimp">This is second text</h2>
+  </body>
 </html>
