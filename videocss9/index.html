@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css text shadow</title>
+    <style>
+      .box {
+        /* ad shadow  under box  */
+
+        border: 2px solid black;
+        box-shadow: 0px 3px 7px 1px purple;
+      }
+      .shadow {
+        /* add shadow under text  */
+        text-shadow: 0px 3px 7px #bd0707;
+      }
+      .box2 {
+    border: 2px solid blue;
+    outline: 4px solid black;
+    outline-width: 2px;
+    outline: dotted;
+    outline-offset: 3px;
+    display: inline;
+    display: grid;
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="box">This is a box</div>
+    <br /><br />
+    <p class="shadow">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci facilis
+      est quos tempore et, delectus qui nisi molestias voluptates necessitatibus
+      velit.
+    </p>
+    <br><br>
+    <span class="box2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, provident.</span>
+  </body>
+</html>

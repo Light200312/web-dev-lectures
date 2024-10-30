@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS display properties</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0;
+      }
+      .box {
+        background-color: aqua;
+        /* display: inline; */
+        /* in display: inline ; the width doesnot work , means it not change width,to change width you will have to use display: inline-block; */
+        display: inline-block;
+        /* inline-block is also used to align-items ,otherwise padding: or margin will not work at the top of the elements */
+        border: 2px solid black;
+        width: 200px;
+        padding: 50px;
+        /* display: none; */
+        /* not display; anything not even margin remains */
+
+        /* visibility: hidden; */
+        /* margin remains in case of visibility: hidden; */
+      }
+      .box1 {
+        background-color: aqua;
+        /* display: inline; */
+        /* in display: inline ; the width doesnot work , means it not change width,to change width you will have to use display: inline-block; */
+        /* display: inline-block; */
+        /* inline-block is also used to align-items ,otherwise padding: or margin will not work at the top of the elements */
+        border: 2px solid black;
+        width: 300px;
+        padding: 50px;
+        display: inline-flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">This is actualy a block statement</div>
+    <p class="box1">This is actualy a block statement</p>
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display source for more display properties-->
+  </body>
+</html>
