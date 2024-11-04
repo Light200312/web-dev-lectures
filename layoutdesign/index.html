@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design layout</title>
+    <style>
+      :root {
+        --color: red;
+        --seccolor: rgb(236, 156, 156);
+        --thirdcolor: rgb(154, 0, 0);
+        --fthgray:rgba(255, 255, 255, 0.664);
+        --allheight:100%;
+      }
+      
+      * {
+        transition: 2ms;
+        margin: 0;
+        padding: 0;
+        
+      }
+      ul li {
+        
+        
+         list-style: none;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+        border-radius: 7px;
+        padding: 0 4px ;
+        margin:  0 10px 0 10px;
+
+        
+       
+      }
+      
+
+      ul {
+        padding: 0 1px 2px 41px;
+       display: flex;
+       justify-content: space-evenly;
+
+
+        background-color: var(--thirdcolor);
+      }
+      nav {
+      
+        position: sticky;
+        /* width: 100%; */
+        top: 0px;
+      }
+      
+
+      main {
+        background-color: var(--fthgray);
+        border: 1px solid;
+        
+
+        height: auto;
+        display: flex;
+        
+        align-content: center;
+      
+        flex-wrap: wrap;
+        gap: 24px 24px;
+        padding: 24px;
+        
+        justify-content: space-around;
+        /* justify-content: center; */
+        overflow: auto;
+      }
+      main article {
+
+        text-align: center;
+        background-color: var(--seccolor);
+        /* justify-content: center; */
+        border-radius: 30px;
+        /* padding: 0px; */
+        width: 250px;
+        /* border: 1px solid; */
+        height: 250px;
+       
+      }
+      footer {
+        background-color: var(--thirdcolor);
+        border: 1px solid;
+        height: 50px;
+        
+
+
+      }
+      .content {
+        border: 1px solid;
+        
+        height: auto;
+        background-color: var(--fthgray);
+       
+      }
+      .content div {
+        margin: 70px;
+        background-color: var(--seccolor);
+
+        border-radius: 6px;
+        padding: 6px;
+        text-align: center;
+        /* border: 1px solid; */
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      span {
+        /* background-color: rgba(0, 0, 0, 0); */
+        height: 29px;
+        font-size: x-large;
+        /* margin: 2px; */
+        width: 29px;
+        border-radius: 30px;
+        /* border: 1px solid; */
+        position: fixed;
+        right: 17px;
+        top: 330px;
+      }
+    </style>
+  </head>
+  <body>
+    
+      <nav>
+        <ul>
+          <li><a href="\">home</a></li>
+          <li><a href="\">Top</a></li>
+          <li><a href="\">Populer</a></li>
+          <li><a href="\">bookmark</a></li>
+        </ul>
+      </nav>
+      <main>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <article></article>
+        <!-- <article><span>this is box1</span></article> -->
+    
+        <span>💀</span>
+      </main>
+      <div class="content">
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nihil,
+          beatae totam ipsa fugiat modi delectus, maiores excepturi ad incidunt
+          perspiciatis illo obcaecati, eum voluptatibus nulla fuga cumque at
+          aliquam.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum in illo velit maiores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam ipsa hic quia, iure ad ipsam, asperiores nulla magnam, autem natus ex alias illo quas aspernatur in. Unde, eum nulla aperiam repudiandae numquam nemo maxime cupiditate similique adipisci? Delectus numquam similique, quam, iusto doloremque, rerum voluptate culpa dolor doloribus provident a?
+        </div>
+      </div>
+      <footer></footer>
+    
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Search Box</title>
+  <style>
+    /* Basic styling */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* Container for search bar */
+    .search-container {
+      display: flex;
+      align-items: center;
+      border: 2px solid #333;
+      border-radius: 20px;
+      padding: 5px;
+      max-width: 100%;
+      width: 400px;
+      transition: all 0.3s ease;
+    }
+
+    /* Search input styling */
+    .search-input {
+      flex: 1;
+      padding: 8px 15px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      border-radius: 20px;
+      width: 100%;
+    }
+
+    /* Search button styling */
+    .search-button {
+      padding: 8px 15px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-left: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .search-button:hover {
+      background-color: #555;
+    }
+
+    /* Responsive styling for smaller screens */
+    @media (max-width: 600px) {
+      .search-container {
+        width: 90%;
+      }
+      .search-input {
+        font-size: 14px;
+      }
+      .search-button {
+        font-size: 14px;
+        padding: 6px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="search-container">
+  <input type="text" class="search-input" placeholder="Search...">
+  <button class="search-button">Search</button>
+</div>
+
+</body>
+</html>

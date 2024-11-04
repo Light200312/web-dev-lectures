@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Mediat</title>
+    <style>
+      body {
+        display: flex;
+        background-color: aqua;
+      }
+      @media only screen and (max-width: 455px) {
+        body {
+          background-color: yellow;
+        }
+        
+      }
+      @media only screen and (orientation:portrait ) {
+        body {
+          flex-direction:column;
+        }
+        
+      }
+
+      div {
+        width: 355px;
+        height: 355px;
+        margin: 12px;
+        padding: 10px;
+        display: flex;
+        border: 40px solid rgb(72, 152, 186);
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
+</html>

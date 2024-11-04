@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .container {
+            margin: 0;
+            padding: 0;
+            /* width:minmax(200px,800px); */
+            /* height: auto; */
+            border: 2px solid black;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
+          
+            /* row-gap: 10px;
+            column-gap: 44px; */
+            justify-items: center;
+            align-items: center;
+            
+        }
+
+      .container  .item {
+        /* position: relative; */
+            /* flex: 1; */
+            border: 2px solid red;
+            padding: 2vw;
+            /* height: 55px; */
+            /* width: auto; */
+        }
+
+        .item-4 {
+            /* grid-row: 1/2;
+            grid-column: pehla/t; */
+        }
+
+        .item-1 {
+            /* grid-row: 1/2; */
+            /* or you can do  */
+            /* grid-row-start: 1;
+            grid-row-end: 2; */
+
+            /* same thing */
+            /* grid-column: 1/2; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item item-1">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item item-4">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>

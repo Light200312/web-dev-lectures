@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-style: white; */
+    
+  }
+  :root {
+    --seccolor: yellow;
+    --color: red;
+    --defpad:20px;
+    --thcolor:rgb(186, 158, 186);
+  }
+  div {
+    /* background-color: var(--seccolor, blue); */
+    /* border-image: linear -; */
+    padding: var(--defpad);
+    height: 75px;
+    
+      border: 10px solid transparent; /* Define border width */
+      border-radius: 10px; /* Optional, if you want rounded borders */
+      background: linear-gradient(45deg, red, blue);
+       /* Define gradient */
+      /* background-origin: border-box; */
+      /* background-clip: border-box;  */
+      /* Clip background to the border area */
+      padding: 10px;
+       /* Add padding to space content from the border */
+      background-clip: padding-box, border-box;
+  
+  }
+  ul {
+    display: flex;
+    background-color: var(--seccolor);
+
+    border-image: linear-gradient(to right, rgb(179, 69, 69), rgb(121, 121, 174)) ;
+
+    list-style: none;
+  }
+
+  li {
+    margin: 4px;
+    padding: var(--defpad);
+
+    background-color: var(--color);
+  }
+  ul li {
+    list-style: none;
+  }
+  ul li:first-child{
+    background-color: var(--thcolor,green);
+  }
+  ul li:nth-child(4)
+  {
+    border: 10px solid;
+    border-image: linear-gradient(to right, red, blue) 1;
+    background-color: var(--thcolor);
+  }

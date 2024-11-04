@@ -1,0 +1,50 @@
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    
+
+
+
+}
+.box{
+    flex:1;
+    color: black;
+    background-color:#f3f3f3;;
+    border-radius: 7px;
+    margin: 25px 25px;
+    max-width: 300px;
+    height: auto;
+    /* overflow: hidden; */
+    margin: 12px;
+    padding: 12px;
+   text-align: center;
+    overflow-wrap: break-word;
+}
+
+.box :first-child{
+    padding: 12px 1px 30px;
+    font-weight: 700;
+   
+    font-size: 20px;
+}
+.box :nth-child(2)
+{
+    display: inline;
+    margin: 45px 15px;
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #f3f3f3;
+
+background-color: #5cb85c ;
+border-radius: 6px;
+
+}
+.box :nth-child(3) {
+    margin: 12px;
+    font-size: 10px;
+}
+
